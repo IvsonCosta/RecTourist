@@ -1,5 +1,0 @@
-package br.com.RecTourist.entidade;
-
-public @interface Table {
-
-}
