@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<security:global-method-security
+		secured-annotations="enabled" />
+
+	<security:http auto-config="true" use-expressions="true"
+		access-denied-page="/login?error=403">
+
+
+		<security:intercept-url pattern="/pages/admin/**" 
+			access="hasRole('ROLE_ADMIN')" />
+		<security:intercept-url pattern="/pages/aluno/**"
+			access="hasRole('ROLE_ALUNO')" />
+		<security:intercept-url pattern="/pages/professor/**"
+			access="hasRole('ROLE_PROFESSOR')" />
+		<security:form-login login-page='/'
+			default-target-url="/home" authentication-failure-url="/login.html" />
+
+		<security:logout invalidate-session="true"
+			delete-cookies="JSESSIONID" logout-success-url='/' />
+	</security:http>
+
+	<security:authentication-manager>
+		<security:authentication-provider
+			user-service-ref='autenticacao' />
+	</security:authentication-manager>
+</beans>
