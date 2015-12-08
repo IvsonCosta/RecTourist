@@ -141,6 +141,8 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/waltson/Downloads/SchoolDrive-master (2)/codigo"/>
+			<item value="/home/waltson/Downloads/RecTourist1"/>
 			<item value="/home/waltson/Documents/workspace-sts-3.7.1.RELEASE/RecTourist"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

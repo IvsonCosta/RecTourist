@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Tue Dec 08 15:38:28 BRT 2015
+org.eclipse.jst.jee.server\:/binary\:/home/waltson/Downloads/RecTourist1/WebContent/WEB-INF/lib/spring-web-4.1.0.RELEASE.jar=WEB-INF/lib/spring-web-4.1.0.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:/home/waltson/Downloads/RecTourist1/WebContent/WEB-INF/lib/spring-web-4.1.0.RELEASE-sources.jar=WEB-INF/lib/spring-web-4.1.0.RELEASE-sources.jar

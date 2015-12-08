@@ -1,0 +1,12 @@
+127.0.0.1 - - [08/Dec/2015:13:13:18 -0300] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [08/Dec/2015:14:15:31 -0300] "GET /RecTourist1/WEB-INF/pages/login.jsp HTTP/1.1" 404 992
+127.0.0.1 - - [08/Dec/2015:14:17:59 -0300] "GET /RecTourist1/WEB-INF/pages/mensagens.jsp HTTP/1.1" 404 992
+127.0.0.1 - - [08/Dec/2015:14:21:49 -0300] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [08/Dec/2015:14:21:49 -0300] "GET /RecTourist1/WEB-INF/pages/login.jsp HTTP/1.1" 404 992
+127.0.0.1 - - [08/Dec/2015:14:52:54 -0300] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [08/Dec/2015:15:38:40 -0300] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [08/Dec/2015:15:50:48 -0300] "GET /RecTourist1/WEB-INF/pages/admin/home.jsp HTTP/1.1" 404 992
+127.0.0.1 - - [08/Dec/2015:15:50:58 -0300] "GET /RecTourist1/WEB-INF/pages/admin/home.jsp HTTP/1.1" 404 992
+127.0.0.1 - - [08/Dec/2015:15:50:59 -0300] "GET /RecTourist1/WEB-INF/pages/admin/home.jsp HTTP/1.1" 404 992
+127.0.0.1 - - [08/Dec/2015:15:51:58 -0300] "GET /RecTourist1/WEB-INF/pages/admin/usuario/cadastroUsuario.jsp HTTP/1.1" 404 992
+127.0.0.1 - - [08/Dec/2015:15:52:43 -0300] "GET /RecTourist1/ HTTP/1.1" 404 992
