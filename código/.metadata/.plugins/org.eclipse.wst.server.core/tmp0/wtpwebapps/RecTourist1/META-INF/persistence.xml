@@ -6,6 +6,7 @@
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
         	       	 
         	 <class>br.com.RecTourist.entidade.Usuario</class>
+        	 <class>br.com.RecTourist.entidade.PontosTuristicos</class>
         	 
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect" />

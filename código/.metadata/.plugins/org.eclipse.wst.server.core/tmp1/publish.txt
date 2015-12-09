@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Tue Dec 08 18:37:17 BRT 2015
+org.eclipse.jst.jee.server\:/binary\:/home/waltson/Downloads/RecTourist1/WebContent/WEB-INF/lib/spring-web-4.1.0.RELEASE.jar=/home/waltson/Downloads/sts-bundle (2)/pivotal-tc-server-developer-3.1.2.RELEASE/base-instance/wtpwebapps/RecTourist1/WEB-INF/lib/spring-web-4.1.0.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:/home/waltson/Downloads/RecTourist1/WebContent/WEB-INF/lib/spring-web-4.1.0.RELEASE-sources.jar=/home/waltson/Downloads/sts-bundle (2)/pivotal-tc-server-developer-3.1.2.RELEASE/base-instance/wtpwebapps/RecTourist1/WEB-INF/lib/spring-web-4.1.0.RELEASE-sources.jar
+org.eclipse.jst.jee.server\:RecTourist1=/home/waltson/Downloads/sts-bundle (2)/pivotal-tc-server-developer-3.1.2.RELEASE/base-instance/wtpwebapps/RecTourist1

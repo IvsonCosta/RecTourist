@@ -1,0 +1,10 @@
+package br.com.RecTourist.entidade;
+
+import javax.persistence.Entity;
+
+public class PontosTuristicos {
+	
+	@Entity
+	@Table(name="PontosTuristicos")
+
+}

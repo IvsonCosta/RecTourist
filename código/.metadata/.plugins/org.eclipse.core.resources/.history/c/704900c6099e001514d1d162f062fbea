@@ -1,0 +1,25 @@
+package br.com.RecTourist.controler;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import antlr.collections.List;
+import br.com.RecTourist.dao.IPontosTuristicosDao;
+import br.com.RecTourist.entidade.PontosTuristicos;
+import br.com.RecTourist.entidade.Usuario;
+
+@Service
+public class PTControler {
+	@Autowired
+	private IPontosTuristicosDao pontosTuristicosDao;
+
+	public void salvar(PontosTuristicos t) {
+		pontosTuristicosDao.save(t);
+	}
+
+	public void excluir(Long id){
+		pontosTuristicosDao.delete(id);
+	}
+	
+
+}

@@ -1,0 +1,64 @@
+package br.com.RecTourist.view;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.postgresql.translation.messages_bg;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import br.com.RecTourist.controler.PTControler;
+import br.com.RecTourist.entidade.PontosTuristicos;
+import br.com.RecTourist.util.AliasPaginas;
+import br.com.RecTourist.util.Mensagems;
+import br.com.RecTourist.util.TipoMensagem;
+
+@Controller
+public class PontosTuristicoView {
+
+	@Autowired
+	private PTControler ptControler;
+
+	@RequestMapping(value = "/formPontosTuristicos", method = RequestMethod.GET)
+	public ModelAndView formPontosTuristicos() {
+		ModelAndView model_PT = new ModelAndView("admin/pontosturisticos/cadastroPT");
+		model_PT.addObject("pontoturistico", new PontosTuristicoView());
+		return model_PT;
+
+	}
+
+	@RequestMapping("/addPontosTuristicos")
+	public ModelAndView addPontosTuristicos(@ModelAttribute("pontosturisticos") PontosTuristicos pontosTuristicos,
+			BindingResult result) {
+		ModelAndView model_PT = new ModelAndView("admin/pontosturisticos/listarPT");
+		try {
+			ptControler.salvar(pontosTuristicos);
+			model_PT.addObject(TipoMensagem.VARIAVEL_VIEW_TIPO.getValor(), TipoMensagem.SUCESSO.getValor());
+			model_PT.addObject(Mensagems.VARIAVEL_VIEW_MENSAGEM, Mensagems.UsuarioCadastrado);
+			model_PT.addObject("pontosturisticos", ptControler.list());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return model_PT;
+
+	}
+
+	@RequestMapping("/listarPontosTuristicos")
+	public ModelAndView listaPontoturistico(HttpServletRequest request){
+		ModelAndView model_PT= new ModelAndView(AliasPaginas.LISTA_PONTOS);
+		try{
+			model_PT.addObject("pontosturisticos", this.ptControler.list());
+			
+		}catch(Exception e){
+			e.printStackTrace();
+			
+		}
+		
+	}
+
+}

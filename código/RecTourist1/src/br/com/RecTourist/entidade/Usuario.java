@@ -30,22 +30,34 @@ public class Usuario {
 	@Column(name = "email", length = 100)
 	private String email;
 	
+	@Column(name="endereco", length = 100)
+	private String endereco;
+	
 
 	public Usuario() {
 	}
 
-	public Usuario(long id, String nome, String sobrenome, String sexo, String email) {
+	public Usuario(long id, String nome, String sobrenome, String sexo, String email, String endereco) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.sobrenome = sobrenome;
 		this.sexo = sexo;
 		this.email = email;
+		this.endereco = endereco;
 		
 	}
 	
 
 	
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
 	public long getId() {
 		return id;
 	}

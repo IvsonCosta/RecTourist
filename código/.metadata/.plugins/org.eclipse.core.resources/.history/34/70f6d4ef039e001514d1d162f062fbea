@@ -1,0 +1,21 @@
+package br.com.RecTourist.entidade;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="PontosTuristicos")
+@SequenceGenerator(name="PT_seq",sequenceName ="PT_seq", allocationSize = 1,initialValue =1)
+
+public class PontosTuristicos {
+	@Id
+	@Column(name="id")
+	@GeneratedValue(strategy = GenerationType.AUTO, generator = "PT_seq")
+	private long id;
+	
+}

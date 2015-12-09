@@ -1,0 +1,16 @@
+package br.com.RecTourist.util;
+
+public class AliasPaginas {
+	// HOME page
+	public final static String HOME_ADMIN = "/admin/home";
+
+	
+
+	/*** Administrador View ***/
+	public final static String LISTA_USUARIO = "admin/usuario/listaUsuario";
+	public final static Strin LISTA_PONTOSTURISTICOS ="admin/pontosturisticos/listarPT"
+
+	
+	
+
+}
